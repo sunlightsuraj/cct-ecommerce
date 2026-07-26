@@ -9,6 +9,7 @@ import Footer from './components/footer'
 import Home from './pages/home'
 import Contact from './pages/contact'
 import News from './pages/news'
+import Shop from './pages/shop'
 
 function App() {
   const [page, setPage] = useState(1);
@@ -20,7 +21,7 @@ function App() {
 
       case 2:
         // Shop
-        return "Page not found";
+        return <Shop/>
         break;
 
       case 3:
