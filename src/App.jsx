@@ -8,6 +8,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Home from './pages/home'
 import Contact from './pages/contact'
+import News from './pages/news'
 
 function App() {
   const [page, setPage] = useState(1);
@@ -24,8 +25,7 @@ function App() {
 
       case 3:
         // News
-        return "Page not found";
-        break;
+        return <News />
 
       case 4:
         // about
@@ -44,8 +44,8 @@ function App() {
 
   return (
     <>
-    <div className="flex flex-col justify-center items-center">
-<div className="w-[90%]">
+     <div className="flex flex-col justify-center items-center">
+       <div className="w-[90%]">
       {/* header */}
       <Header setP={setPage} />
 
@@ -53,8 +53,8 @@ function App() {
 
       <Footer />
       
-    </div>
-    </div>
+       </div>
+     </div>
     </>
   )
 }
