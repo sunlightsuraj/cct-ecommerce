@@ -1,4 +1,9 @@
-function Header() {
+function Header(props) {
+  const onClickNavItem = (e, value) => {
+    e.preventDefault();
+    
+    props.setP(value);
+  }
 
 	return (
 		<>
@@ -77,15 +82,17 @@ function Header() {
           {/* <!--nav1--> */}
 
           <a
-            href="index.html"
+            href="#"
             id="home"
             className="nav-link hover:border-b-green-700 border-b-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
+            onClick={(e) => onClickNavItem(e, 1)}
             >HOME</a
           >
           <a
             href="shop.html"
             id="shop"
             className="flex gap-2 items-center nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
+            onClick={(e) => onClickNavItem(e, 2)}
             >SHOP
             <svg
               className="flex items-center justify-center mt-1"
@@ -102,21 +109,24 @@ function Header() {
               /></svg
           ></a>
           <a
-            href="news.html"
+            href="#"
             id="news"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
+            onClick={(e) => onClickNavItem(e, 3)}
             >NEWS</a
           >
           <a
-            href="about.html"
+            href="#"
             id="about"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
+            onClick={(e) => onClickNavItem(e, 4)}
             >ABOUT US</a
           >
           <a
-            href="contact.html"
+            href="#"
             id="contact"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
+            onClick={(e) => onClickNavItem(e, 5)}
             >CONTACT US</a
           >
         </div>
