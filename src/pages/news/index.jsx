@@ -1,5 +1,5 @@
-import Newspost from "../../components/news/news_post";
-import Newsaside from "../../components/news/news_aside";
+import NewsPost from "../../components/news/news_post";
+import NewsAside from "../../components/news/news_aside";
 
 
 function News(){
@@ -15,11 +15,11 @@ function News(){
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
       
           {/* <!-- LEFT: posts list --> */}
-          <Newspost />
+          <NewsPost />
           
       
           {/* <!-- RIGHT: sidebar --> */}
-          <Newsaside />
+          <NewsAside />
           
       
         </div>

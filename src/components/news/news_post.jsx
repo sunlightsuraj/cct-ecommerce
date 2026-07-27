@@ -1,4 +1,4 @@
-function Newspost(){
+function NewsPost(){
     return (
         <>
 
@@ -121,4 +121,4 @@ function Newspost(){
     )
 }
 
-export default Newspost;
+export default NewsPost;

@@ -1,4 +1,4 @@
-function Newsaside(){
+function NewsAside(){
     return(
         <>
 
@@ -73,4 +73,4 @@ function Newsaside(){
     )
 }
 
-export default Newsaside;
+export default NewsAside;
