@@ -22,7 +22,6 @@ function App() {
       case 2:
         // Shop
         return <Shop/>
-        break;
 
       case 3:
         // News
