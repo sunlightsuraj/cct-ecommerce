@@ -1,6 +1,9 @@
+
 import Compare from "../../components/cart_buttons/compare";
 import View from "../../components/cart_buttons/view";
 import WishList from "../../components/cart_buttons/wishList";
+import ProductCard from "../../components/home/product_card";
+
 
 function Home() {
 
@@ -1089,6 +1092,11 @@ function Home() {
               </button>
             </div>
           </div>
+
+          {/* <!-- Component Product Card added */}
+          <ProductCard />
+
+          
         </div>
       </section>
 
