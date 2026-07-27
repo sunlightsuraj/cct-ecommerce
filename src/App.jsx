@@ -10,6 +10,7 @@ import Home from './pages/home'
 import Contact from './pages/contact'
 import News from './pages/news'
 import Shop from './pages/shop'
+import About from './pages/about'
 
 function App() {
   const [page, setPage] = useState(1);
@@ -29,8 +30,7 @@ function App() {
 
       case 4:
         // about
-        return "Page not found";
-        break;
+        return <About />
 
       case 5:
         // contact
