@@ -1,3 +1,5 @@
+import ProductCard from "../../components/home/product_card";
+
 function Home() {
 
 	return (
@@ -1141,6 +1143,11 @@ function Home() {
               </button>
             </div>
           </div>
+
+          {/* <!-- Component Product Card added */}
+          <ProductCard />
+
+          
         </div>
       </section>
 
