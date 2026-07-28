@@ -1,9 +1,6 @@
+import { NavLink } from "react-router";
+
 function Header(props) {
-  const onClickNavItem = (e, value) => {
-    e.preventDefault();
-    
-    props.setP(value);
-  }
 
 	return (
 		<>
@@ -81,18 +78,15 @@ function Header(props) {
         <div className="flex justify-start items-center gap-5 w-1/2">
           {/* <!--nav1--> */}
 
-          <a
-            href="#"
+          <NavLink to="/"
             id="home"
             className="nav-link hover:border-b-green-700 border-b-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
-            onClick={(e) => onClickNavItem(e, 1)}
-            >HOME</a
-          >
-          <a
-            href="shop.html"
+            >HOME</NavLink>
+          
+          <NavLink
+            to="/shop"
             id="shop"
             className="flex gap-2 items-center nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
-            onClick={(e) => onClickNavItem(e, 2)}
             >SHOP
             <svg
               className="flex items-center justify-center mt-1"
@@ -107,27 +101,24 @@ function Header(props) {
                 fill-rule="evenodd"
                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
               /></svg
-          ></a>
-          <a
-            href="#"
+          ></NavLink>
+          <NavLink
+            to="/news"
             id="news"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
-            onClick={(e) => onClickNavItem(e, 3)}
-            >NEWS</a
+            >NEWS</NavLink
           >
-          <a
-            href="#"
+          <NavLink
+            to="/about"
             id="about"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
-            onClick={(e) => onClickNavItem(e, 4)}
-            >ABOUT US</a
+            >ABOUT US</NavLink
           >
-          <a
-            href="#"
+          <NavLink
+            to="/contact"
             id="contact"
             className="nav-link hover:border-b-green-700 target:border-green-700 h-full border-b-2 border-transparent p-5 py-6 transition-all duration-300 ease-in-out"
-            onClick={(e) => onClickNavItem(e, 5)}
-            >CONTACT US</a
+            >CONTACT US</NavLink
           >
         </div>
         <div className="flex justify-end gap-10 items-center w-1/2">

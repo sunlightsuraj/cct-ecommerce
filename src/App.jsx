@@ -11,50 +11,25 @@ import Contact from './pages/contact'
 import News from './pages/news'
 import Shop from './pages/shop'
 import About from './pages/about'
+import { BrowserRouter, createBrowserRouter } from 'react-router';
+import { RouterProvider } from 'react-router/dom';
 
 function App() {
-  const [page, setPage] = useState(1);
-
-  const renderPage = () => {
-    switch(page) {
-      case 1:
-        return <Home />
-
-      case 2:
-        // Shop
-        return <Shop/>
-
-      case 3:
-        // News
-        return <News />
-
-      case 4:
-        // about
-        return <About />
-
-      case 5:
-        // contact
-        return <Contact />
-
-      default:
-        // 404
-        return "Page not found";
-    }
-  }
+  
 
   return (
     <>
-     <div className="flex flex-col justify-center items-center">
-       <div className="w-[90%]">
-      {/* header */}
-      <Header setP={setPage} />
+      <div className="flex flex-col justify-center items-center">
+        <div className="w-[90%]">
+          {/* header */}
+          <Header />
 
-      { renderPage() }
+          <Home />
 
-      <Footer />
-      
-       </div>
-     </div>
+          <Footer />
+
+        </div>
+      </div>
     </>
   )
 }
